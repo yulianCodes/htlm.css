@@ -20,7 +20,7 @@ div h2, div h3 {
 
 * {
     font-size: 24px;
-    color:black; /* esto es un comentario */
+   /* color:black; /* esto es un comentario */
 } 
 
 /* esto es un comentario */
@@ -59,11 +59,95 @@ lineas
 }
 
 #fondo {
-    background-color: rgba(255,0,0,);
+    background-color: rgba(255,0,0,) repeat-y center bottom / 100px 100px;
     /*opacity: 0,3;*/
     height: 200px;
     background-image: url("goku.png");
     background-size: 200px 200px;
     background-repeat: repeat-y;
     background-position: center;
+}
+
+.margen {
+    background-color: chocolate ;
+    margin: 15px;
+    padding: 30px 15px 5px;
+    border: solid 1px black;
+    height: 100px;
+    width: 50px;
+    overflow: scroll;
+    outline: 1px solid red;
+}
+
+.text {
+    font-family: "Roboto", sans-serif;
+    text-align: justify;
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px blue;
+}
+
+a:link {
+    color: blueviolet;
+}
+
+a:visited {
+    color:gray;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:active {
+    color: red;
+}
+
+ul {
+    background-color: cyan;
+    list-style-type: georgian; 
+    /* padding-left: 0; */
+    /* list-style-position: inside; */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: solid 1px #eee;
+    padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tr:hover {
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+span {
+    display:block; 
+    /* display: none; */
+    /* visibility: hidden; */
+    max-width: 300px;
+    background-color: red;
+}
+
+.inline {
+    display: inline;
+}
+
+#position {
+    position: sticky;
+    left: 20px;
+    top: 25px;
 }
